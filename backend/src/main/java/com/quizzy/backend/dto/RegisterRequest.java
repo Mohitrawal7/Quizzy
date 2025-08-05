@@ -4,6 +4,16 @@ public class RegisterRequest {
     private String username;
     private String password;
 
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    private String email;
+
     public String getUsername() {
         return username;
     }

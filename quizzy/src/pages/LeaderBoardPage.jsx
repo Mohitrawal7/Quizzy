@@ -2,7 +2,9 @@ import React from 'react'
 
 const LeaderBoardPage = () => {
   return (
-    <div>LeaderBoardPage</div>
+    <>
+      <h1>LeaderBoard</h1>
+    </>
   )
 }
 

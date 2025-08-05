@@ -1,5 +1,5 @@
 import { Typography, Layout, Card, Form, Input, Checkbox, Button } from "antd";
-import { useNavigate } from "react-router-dom";
+import { useNavigate,Link } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 import { useState } from "react";
 import { UserOutlined, LockOutlined } from "@ant-design/icons";
@@ -71,6 +71,9 @@ const LoginPage = () => {
             {loading ? "Logging in..." : "Login"}
           </Button>
         </Form.Item>
+           <Form.Item style={{ textAlign: "center" }}>
+            NO Account? <Link to="/register">Sign up now!</Link>
+          </Form.Item>
       </Form>
    </Card>
     </div>

@@ -42,9 +42,12 @@ public class AuthController {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Error: Username is already taken!");
         }
 
+
+
         // Create new user here now
         User user = new User();
         user.setUsername(registerRequest.getUsername());
+        user.setEmail(registerRequest.getEmail());
         user.setPassword(passwordEncoder.encode(registerRequest.getPassword())); //protect password
         user.setRole("USER");
 
